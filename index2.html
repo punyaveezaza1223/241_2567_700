@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+    .container .item{
+        background-color: aquamarine;
+    }
+    .main-container  > .item{
+        background-color: rgb(99, 99, 201);
+        padding: 10px;
+    }
+    .button{
+        background-color: rgb(45, 136, 216);
+        border: 0;
+        padding: 10px;
+    }
+    .button.active{
+        background-color: rgb(243, 103, 103);
+    }
+    .button.danger{
+        background-color: greenyellow;
+    }
+
+    .item1 + .item2 {
+        background-color: brown;
+    }
+    input[type=text]{
+        background-color: plum;
+        border: 1px solid black;
+        height: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        Container
+        <div class="item">
+            Item
+        </div>
+    </div>
+
+    <div class="footer-container">
+        Container
+        
+    </div>
+
+    <div class="main-container">
+        
+        <div class="item">
+            Item
+            <div class="item">
+                Item 1
+            </div>
+            <div class="item">
+                Item 2
+            </div>
+            <div class="item">
+                Item 3
+            </div>
+        </div>
+    </div>
+    <!--3.-->
+    <button class="button">Button</button>
+    <button class="button active">Button</button>
+    <button class="button danger">Button</button>
+
+    <!--4.เพื่อนกัน (adjacent) -->
+    <div class="item1">item1</div>
+    <div class="item2">item2</div>
+
+    <!--5. attribute selector-->
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="text" name="email">
+</body>
+</html>
